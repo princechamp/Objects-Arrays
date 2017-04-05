@@ -1,6 +1,6 @@
 var allMyBubbles = [];
-var numOfBubbles = prompt("How many blue balls would you like to see?")
-var sizeOfBubble = prompt("How big would you like the balls to be?")
+var numOfBubbles = prompt("How many blue balls would you like to see?");
+var sizeOfBubble = 20
 function setup(){
     createCanvas(600,400);
     for(var i=0; i < numOfBubbles; i++){
@@ -22,7 +22,7 @@ function draw(){
 function Bubble(x,y){
     this.x = x;
     this.y = y;
-    fill(25,0,250,125)
+    fill(255,20,50,125)
     this.display = function(){
         stroke(200);
         ellipse(this.x,this.y,sizeOfBubble,sizeOfBubble);
